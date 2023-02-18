@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    background-color: #f0e7d9;
+}
+h1{
+    margin:30px 0 20px;
+    font-family: 'Sacramento', cursive;
+    font-size: 90px;
+    color: #361500;
+    line-height: double;
+    /*margin: 0 auto 0 auto; --> another way of doing centered instead using text-align: center; */
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color:#361500;
+    font-weight: bolder;
+    padding-bottom: 10px;
+
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+p{
+    line-height: 2;
+    color: #40514E;
+   
+}
+
+a{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #EAF6F6;
+}
+
+/* Navigation Bar */
+nav {
+    /* background-color: #FFCEFE; */
+    background-color: rgba(0,0,0,0);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  nav a {
+    color:#8a837c;
+    margin-right: 30px;
+    text-decoration: none;
+    
+  }
+  
+  nav a:hover {
+    color:#361500;
+    border-bottom: 3px solid #361500;
+  }
+
+/* top container */
+.top-container{
+    background-color:#E3CAA5;
+    padding: 100px 150px 150px;
+    position: relative;
+   
+}
+
+#part2{
+    padding: 150px 0 0;
+    
+}
+.intro{
+    width: 30%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.bottom-container{
+    background-color:#E3CAA5;
+    color: #EAF6F6;
+    padding: 50px 0 20px;
+}
+
+.bottom-container h2{
+  margin: 0 auto;
+}
+
+.footer-link{
+    color: white;
+    
+} 
+
+hr{
+    border-top: 5px dotted ;
+    color: #c3c6c6;
+    width: 3%;
+    margin: 200px auto;
+}
+
+.btn {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #787b7d;
+    background-image: -webkit-linear-gradient(top, #adb1b3, #adb1b3);
+    background-image: -moz-linear-gradient(top, #adb1b3, #adb1b3);
+    background-image: -ms-linear-gradient(top, #adb1b3, #adb1b3);
+    background-image: -o-linear-gradient(top, #adb1b3, #adb1b3);
+    background-image: linear-gradient(to bottom, #adb1b3, #adb1b3);
+    text-decoration: none;
+  }
+
+  .contact-msg{
+    width: 40%;
+    margin:40px auto 60px;
+    
+  }
+
+  .copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
+
+  /* part3 */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    padding: 30px 0 60px;
+    text-align: center;
+  }
+
+  @media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem ;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .project-img {
+        height: auto; 
+        width: auto; 
+        max-width: 150px; 
+        max-height: 150px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto 100px;
+  }
